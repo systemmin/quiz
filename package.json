@@ -1,0 +1,17 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "自考题库",
+  "main": "main.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "build": "node ./main.js"
+  },
+  "keywords": [
+    "自考题库"
+  ],
+  "author": "Mr.Fang",
+  "license": "ISC"
+}

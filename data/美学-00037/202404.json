@@ -1,0 +1,827 @@
+[
+  {
+    "name": " 鲍姆嘉通创立美学的哲学基础是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 辩证唯物主义哲学",
+        "checked": 0
+      },
+      {
+        "content": " 精神分析哲学",
+        "checked": 0
+      },
+      {
+        "content": " 理性主义哲学",
+        "checked": 1
+      },
+      {
+        "content": " 经验主义哲学",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 美学的研究方法是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 单一 的、 抽象的",
+        "checked": 0
+      },
+      {
+        "content": " 感知的、 逻辑的",
+        "checked": 0
+      },
+      {
+        "content": " 多样的、 综合的",
+        "checked": 1
+      },
+      {
+        "content": " 历史的、 体验的",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 在审美活动中审美主体所看重的是对象的（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 精神意义",
+        "checked": 0
+      },
+      {
+        "content": " 实际用途",
+        "checked": 0
+      },
+      {
+        "content": " 感性意义",
+        "checked": 1
+      },
+      {
+        "content": " 实践意义",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 与一般的生活体验不同 ,审美体验（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 常常着眼于局部利益",
+        "checked": 0
+      },
+      {
+        "content": " 具有整体性和根本性",
+        "checked": 1
+      },
+      {
+        "content": " 总是分散的、 零碎的",
+        "checked": 0
+      },
+      {
+        "content": " 是种种人生经验的总和",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 审美对象的物质因素主要是指构成具体事物的（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 社会属性",
+        "checked": 0
+      },
+      {
+        "content": " 理性属性",
+        "checked": 0
+      },
+      {
+        "content": " 实践属性",
+        "checked": 0
+      },
+      {
+        "content": " 感性属性",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 最初与人类审美活动紧密联系在一起的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 游戏活动",
+        "checked": 0
+      },
+      {
+        "content": " 巫术活动",
+        "checked": 1
+      },
+      {
+        "content": " 使用工具的活动",
+        "checked": 0
+      },
+      {
+        "content": " 制造生产工具的活动",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 审美形态是多种因素的统一 ,其中核心的因素是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 审美情趣",
+        "checked": 0
+      },
+      {
+        "content": " 人生境界",
+        "checked": 0
+      },
+      {
+        "content": " 审美风格",
+        "checked": 1
+      },
+      {
+        "content": " 天地境界",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 康德认为 ,崇高给人带来的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 积极的快乐",
+        "checked": 0
+      },
+      {
+        "content": " 消极的快乐",
+        "checked": 1
+      },
+      {
+        "content": " 游戏的快乐",
+        "checked": 0
+      },
+      {
+        "content": " 想象的快乐",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 下列关于荒诞的表述中不正确的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 荒诞是一种现代审美形态",
+        "checked": 0
+      },
+      {
+        "content": " 荒诞是人的异化与局限性的表现",
+        "checked": 0
+      },
+      {
+        "content": " 荒诞是对人生存在的无意义状态的体悟",
+        "checked": 0
+      },
+      {
+        "content": " 从内容看 ,荒诞更接近于喜剧",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "“ 明月松间照 ,清泉石上流”所体现的审美形态是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 自然",
+        "checked": 0
+      },
+      {
+        "content": " 含蓄",
+        "checked": 0
+      },
+      {
+        "content": " 壮美",
+        "checked": 0
+      },
+      {
+        "content": " 优美",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 亚里士多德认为 ,悲剧的特殊效果在于引起人们的（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 痛苦与绝望",
+        "checked": 0
+      },
+      {
+        "content": " 怜悯与恐惧",
+        "checked": 1
+      },
+      {
+        "content": " 尊严与自豪",
+        "checked": 0
+      },
+      {
+        "content": " 悲伤与恐怖",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "“大漠孤烟直 ,长河落日圆”,从审美形态来看这句诗属于（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 优美",
+        "checked": 0
+      },
+      {
+        "content": " 意境",
+        "checked": 1
+      },
+      {
+        "content": " 崇高",
+        "checked": 0
+      },
+      {
+        "content": " 自然",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 中世纪美学在根本上属于（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 哲学",
+        "checked": 0
+      },
+      {
+        "content": " 神学",
+        "checked": 1
+      },
+      {
+        "content": " 社会学",
+        "checked": 0
+      },
+      {
+        "content": " 心理学",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 下列美学家中 ,属于经验主义的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 休谟",
+        "checked": 1
+      },
+      {
+        "content": " 康德",
+        "checked": 0
+      },
+      {
+        "content": " 席勒",
+        "checked": 0
+      },
+      {
+        "content": " 黑格尔",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 中国古代诗论中提到的“不着一字 ,尽得风流”,所涉及的审美理解的特点是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 非情感性",
+        "checked": 1
+      },
+      {
+        "content": " 非概念性",
+        "checked": 0
+      },
+      {
+        "content": " 非直观性",
+        "checked": 0
+      },
+      {
+        "content": " 非感知性",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 审美经验中最为活跃的因素是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 情感",
+        "checked": 0
+      },
+      {
+        "content": " 想象",
+        "checked": 1
+      },
+      {
+        "content": " 理性",
+        "checked": 0
+      },
+      {
+        "content": " 感知",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 明代书法家祝允明提出 :“身与事接而境生 ,境与身接而情生”,这指的是审美经验的（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 呈现阶段",
+        "checked": 0
+      },
+      {
+        "content": " 构成阶段",
+        "checked": 1
+      },
+      {
+        "content": " 评价阶段",
+        "checked": 0
+      },
+      {
+        "content": " 鉴赏阶段",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 在审美经验的构成要素中 ,直接与对象发生关系的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 感知",
+        "checked": 1
+      },
+      {
+        "content": " 想象",
+        "checked": 0
+      },
+      {
+        "content": " 情感",
+        "checked": 0
+      },
+      {
+        "content": " 理解",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 克罗齐的“艺术即直觉”说体现的艺术观是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 游戏说",
+        "checked": 0
+      },
+      {
+        "content": " 符号说",
+        "checked": 0
+      },
+      {
+        "content": " 表现说",
+        "checked": 1
+      },
+      {
+        "content": " 巫术说",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 荣格关于艺术起源的学说是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 模仿说",
+        "checked": 0
+      },
+      {
+        "content": " 游戏说",
+        "checked": 0
+      },
+      {
+        "content": " 劳动说",
+        "checked": 0
+      },
+      {
+        "content": " 集体无意识说",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "“art”一词在古希腊语中的意思主要是指（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 思想",
+        "checked": 0
+      },
+      {
+        "content": " 情感",
+        "checked": 0
+      },
+      {
+        "content": " 技艺",
+        "checked": 1
+      },
+      {
+        "content": " 智慧",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 艺术敏感主要是指艺术家的（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 表现力",
+        "checked": 0
+      },
+      {
+        "content": " 理解力",
+        "checked": 0
+      },
+      {
+        "content": " 判断力",
+        "checked": 0
+      },
+      {
+        "content": " 感悟力",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "“期待视界”对于作品来说是一种（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 先在结构",
+        "checked": 1
+      },
+      {
+        "content": " 心理结构",
+        "checked": 0
+      },
+      {
+        "content": " 无意识结构",
+        "checked": 0
+      },
+      {
+        "content": " 潜意识结构",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 艺术最核心的功能是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 宣传",
+        "checked": 0
+      },
+      {
+        "content": " 审美",
+        "checked": 1
+      },
+      {
+        "content": " 教育",
+        "checked": 0
+      },
+      {
+        "content": " 娱乐",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 比较合理的艺术分类标准应该是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 艺术作品自身的存在方式",
+        "checked": 1
+      },
+      {
+        "content": " 艺术作品与欣赏者之间的关系",
+        "checked": 0
+      },
+      {
+        "content": " 艺术与现实之间的关系",
+        "checked": 0
+      },
+      {
+        "content": " 艺术作品与创作者之间的关系",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 审美教育的实践基础是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 教育活动",
+        "checked": 0
+      },
+      {
+        "content": " 道德活动",
+        "checked": 0
+      },
+      {
+        "content": " 艺术活动",
+        "checked": 1
+      },
+      {
+        "content": " 审美活动",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 孔子主张“兴于诗 ,立于礼 ,成于乐”,说明他把乐的感化作用看成是育人的（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 最高境界",
+        "checked": 1
+      },
+      {
+        "content": " 现实途径",
+        "checked": 0
+      },
+      {
+        "content": " 重要手段",
+        "checked": 0
+      },
+      {
+        "content": " 根本目的",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 西方美学史上最早明确提及审美教育的美学家是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 亚里士多德",
+        "checked": 0
+      },
+      {
+        "content": " 苏格拉底",
+        "checked": 0
+      },
+      {
+        "content": " 柏拉图",
+        "checked": 1
+      },
+      {
+        "content": " 毕达哥拉斯",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 席勒认为 ,美育的独特目的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 促进健康",
+        "checked": 0
+      },
+      {
+        "content": " 促进认识",
+        "checked": 0
+      },
+      {
+        "content": " 促进道德",
+        "checked": 0
+      },
+      {
+        "content": " 促进鉴赏力",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 与一般的教育方式相比 ,美育最显著的特点是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": " 诉诸感性",
+        "checked": 1
+      },
+      {
+        "content": " 化性起伪",
+        "checked": 0
+      },
+      {
+        "content": " 理性直观",
+        "checked": 0
+      },
+      {
+        "content": " 陶养性情",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 审美经验的内在机制中蕴涵的超越性主要包括（）",
+    "type": 2,
+    "options": [
+      {
+        "content": " 从物质世界向精神世界超越",
+        "checked": 0
+      },
+      {
+        "content": " 从现实世界向理想世界超越",
+        "checked": 1
+      },
+      {
+        "content": " 从经验世界向超验世界超越",
+        "checked": 1
+      },
+      {
+        "content": " 从主观世界向客观世界超越",
+        "checked": 0
+      },
+      {
+        "content": " 从内在世界向外在世界超越",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 审美情感对于审美想象的作用主要有（）",
+    "type": 2,
+    "options": [
+      {
+        "content": " 审美情感是审美想象的原动力",
+        "checked": 1
+      },
+      {
+        "content": " 审美情感是审美想象的对象和内容",
+        "checked": 0
+      },
+      {
+        "content": " 审美情感能够调节和支配审美想象",
+        "checked": 1
+      },
+      {
+        "content": " 审美情感能使审美想象具有普遍性",
+        "checked": 0
+      },
+      {
+        "content": " 审美情感能使审美想象具有客观性",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 从美学史来看 ,美学家们划分艺术类型的主要依据是（）",
+    "type": 2,
+    "options": [
+      {
+        "content": " 艺术与现实的关系",
+        "checked": 1
+      },
+      {
+        "content": " 艺术与作者的关系",
+        "checked": 0
+      },
+      {
+        "content": " 艺术作品与欣赏者的关系",
+        "checked": 0
+      },
+      {
+        "content": " 艺术的起源",
+        "checked": 0
+      },
+      {
+        "content": " 艺术作品自身的存在方式",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 在中国近代美学史上 ,对美育作为一 门独立学科的形成做出重要贡献的美学家有（）",
+    "type": 2,
+    "options": [
+      {
+        "content": " 蔡元培",
+        "checked": 1
+      },
+      {
+        "content": " 王国维",
+        "checked": 1
+      },
+      {
+        "content": " 梁启超",
+        "checked": 1
+      },
+      {
+        "content": " 宗白华",
+        "checked": 0
+      },
+      {
+        "content": " 李泽厚",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": " 美学史上关于美育内涵的主要观点有（）",
+    "type": 2,
+    "options": [
+      {
+        "content": " 美育是人格教育",
+        "checked": 1
+      },
+      {
+        "content": " 美育是感恩教育",
+        "checked": 0
+      },
+      {
+        "content": " 美育是情感教育",
+        "checked": 1
+      },
+      {
+        "content": " 美育是艺术教育",
+        "checked": 1
+      },
+      {
+        "content": " 美育是生命教育",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  }
+]

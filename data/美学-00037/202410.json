@@ -1,0 +1,867 @@
+[
+  {
+    "name": "美学的根基是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "文学",
+        "checked": 0
+      },
+      {
+        "content": "史学",
+        "checked": 0
+      },
+      {
+        "content": "哲学",
+        "checked": 1
+      },
+      {
+        "content": "科学",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "马克思主义存在论的根基是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "实践",
+        "checked": 1
+      },
+      {
+        "content": "历史",
+        "checked": 0
+      },
+      {
+        "content": "文化",
+        "checked": 0
+      },
+      {
+        "content": "劳动",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "属于审美趣味的内在方面的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "能力或鉴赏力",
+        "checked": 1
+      },
+      {
+        "content": "兴趣或品位",
+        "checked": 0
+      },
+      {
+        "content": "能力或兴趣",
+        "checked": 0
+      },
+      {
+        "content": "品位或鉴赏力",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "最能体现人的本质特点的活动方式是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "劳动",
+        "checked": 0
+      },
+      {
+        "content": "生殖",
+        "checked": 0
+      },
+      {
+        "content": "审美",
+        "checked": 1
+      },
+      {
+        "content": "宗教",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "处在审美体验中的人要去（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "客观认识对象的物理属性",
+        "checked": 0
+      },
+      {
+        "content": "客观评价对象的实用价值",
+        "checked": 0
+      },
+      {
+        "content": "正确把握对象的内在规律",
+        "checked": 0
+      },
+      {
+        "content": "把客体对象完全接纳到自己的生命世界中",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "审美对象从它所依存的客观事物中被分离出来是因为（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "主体的社会经验",
+        "checked": 0
+      },
+      {
+        "content": "主体的创造性观照",
+        "checked": 1
+      },
+      {
+        "content": "主体的审美阅历",
+        "checked": 0
+      },
+      {
+        "content": "主体的单纯的静观",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "提出动物也有美感的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "斯宾塞",
+        "checked": 0
+      },
+      {
+        "content": "弗洛伊德",
+        "checked": 0
+      },
+      {
+        "content": "达尔文",
+        "checked": 1
+      },
+      {
+        "content": "德谟克利特",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "表征人类已经具有简单审美意识的生产工具出现于（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "新人阶段",
+        "checked": 0
+      },
+      {
+        "content": "智人阶段",
+        "checked": 1
+      },
+      {
+        "content": "直立人阶段",
+        "checked": 0
+      },
+      {
+        "content": "南方古猿阶段",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "荒诞作为审美范畴出现在（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "14世纪中叶以后",
+        "checked": 0
+      },
+      {
+        "content": "17世纪中叶以后",
+        "checked": 0
+      },
+      {
+        "content": "18世纪中叶以后",
+        "checked": 0
+      },
+      {
+        "content": "19世纪中叶以后",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "西方悲剧崇尚的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "宗教精神",
+        "checked": 0
+      },
+      {
+        "content": "斗争精神",
+        "checked": 0
+      },
+      {
+        "content": "服从精神",
+        "checked": 0
+      },
+      {
+        "content": "牺牲精神",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "体现出主体与对象之间和谐关系的审美形态是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "优美",
+        "checked": 1
+      },
+      {
+        "content": "崇高",
+        "checked": 0
+      },
+      {
+        "content": "悲剧",
+        "checked": 0
+      },
+      {
+        "content": "荒诞",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "在审美对象的形式构成上，崇高往往具有（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "劲健的物质力量",
+        "checked": 0
+      },
+      {
+        "content": "劲健的精神力量",
+        "checked": 0
+      },
+      {
+        "content": "粗犷博大的感性形态",
+        "checked": 1
+      },
+      {
+        "content": "惊心动魄的气势",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "提出悲剧理论中的“焦虑说”的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "克尔凯郭尔",
+        "checked": 1
+      },
+      {
+        "content": "尼采",
+        "checked": 0
+      },
+      {
+        "content": "康德",
+        "checked": 0
+      },
+      {
+        "content": "黑格尔",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "许多审美形态最初总是表现为（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "艺术形态",
+        "checked": 1
+      },
+      {
+        "content": "自然形态",
+        "checked": 0
+      },
+      {
+        "content": "精神形态",
+        "checked": 0
+      },
+      {
+        "content": "知识形态",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "西方古代美学讨论的核心问题是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "美的本质问题",
+        "checked": 1
+      },
+      {
+        "content": "审美经验问题",
+        "checked": 0
+      },
+      {
+        "content": "艺术问题",
+        "checked": 0
+      },
+      {
+        "content": "审美形态问题",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "托马斯·门罗的美学思想属于（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "新自然主义",
+        "checked": 1
+      },
+      {
+        "content": "实用主义",
+        "checked": 0
+      },
+      {
+        "content": "解释学",
+        "checked": 0
+      },
+      {
+        "content": "唯意志论",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "主体能够通过感觉器官把握对象的审美特征，这体现了审美经验的（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "直观性",
+        "checked": 1
+      },
+      {
+        "content": "超越性",
+        "checked": 0
+      },
+      {
+        "content": "功利性",
+        "checked": 0
+      },
+      {
+        "content": "非功利性",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "在下列学说中，从艺术的本质出发界定艺术的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "模仿说",
+        "checked": 1
+      },
+      {
+        "content": "游戏说",
+        "checked": 0
+      },
+      {
+        "content": "载道说",
+        "checked": 0
+      },
+      {
+        "content": "娱乐说",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "艺术品是为接受者而存在的，这说明了艺术品具有（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "自律性",
+        "checked": 0
+      },
+      {
+        "content": "他律性",
+        "checked": 1
+      },
+      {
+        "content": "符号性",
+        "checked": 0
+      },
+      {
+        "content": "封闭性",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "主体从客观世界中摄取象征物并赋予其象征意义，由此产生的意象属于（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "仿象",
+        "checked": 0
+      },
+      {
+        "content": "兴象",
+        "checked": 0
+      },
+      {
+        "content": "喻象",
+        "checked": 1
+      },
+      {
+        "content": "抽象",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "在艺术品的结构中，直接指示并负载着意象世界的是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "物质实在层",
+        "checked": 0
+      },
+      {
+        "content": "形式符号层",
+        "checked": 1
+      },
+      {
+        "content": "社会意识层",
+        "checked": 0
+      },
+      {
+        "content": "意境超验层",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "艺术家在创作中突然出现的精神亢奋、想象活跃、文思泉涌的状态被称作（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "艺术敏感",
+        "checked": 0
+      },
+      {
+        "content": "艺术灵感",
+        "checked": 1
+      },
+      {
+        "content": "艺术直觉",
+        "checked": 0
+      },
+      {
+        "content": "艺术技巧",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "刘勰说：“观文者披文以人情”，这句话涉及到的艺术活动环节是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "艺术创造",
+        "checked": 0
+      },
+      {
+        "content": "艺术接受",
+        "checked": 1
+      },
+      {
+        "content": "艺术品",
+        "checked": 0
+      },
+      {
+        "content": "艺术史",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "主张艺术作品中存在许多空白和不确定性的美学家是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "英伽登",
+        "checked": 1
+      },
+      {
+        "content": "伽达默尔",
+        "checked": 0
+      },
+      {
+        "content": "尧斯",
+        "checked": 0
+      },
+      {
+        "content": "伊瑟尔",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "介乎于审美和实用之间的艺术形态是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "建筑",
+        "checked": 1
+      },
+      {
+        "content": "雕塑",
+        "checked": 0
+      },
+      {
+        "content": "绘画",
+        "checked": 0
+      },
+      {
+        "content": "音乐",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "梁启超认为美育是一种（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "艺术教育",
+        "checked": 0
+      },
+      {
+        "content": "趣味教育",
+        "checked": 1
+      },
+      {
+        "content": "道德",
+        "checked": 0
+      },
+      {
+        "content": "信仰",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "孔子以山水比德，这可以说明（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "美育是人格教育",
+        "checked": 1
+      },
+      {
+        "content": "美育是情感教育",
+        "checked": 0
+      },
+      {
+        "content": "美育是艺术教育",
+        "checked": 0
+      },
+      {
+        "content": "美育是人文教育",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "美育的终极目标是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "培养全面发展的人",
+        "checked": 1
+      },
+      {
+        "content": "培养具有高尚情操的人",
+        "checked": 0
+      },
+      {
+        "content": "培养具有艺术素养的人",
+        "checked": 0
+      },
+      {
+        "content": "培养符合社会规范的人",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "贺拉斯提出的美育理论是（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "以美育代宗教",
+        "checked": 0
+      },
+      {
+        "content": "寓教于乐",
+        "checked": 1
+      },
+      {
+        "content": "载道说",
+        "checked": 0
+      },
+      {
+        "content": "净化说",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "“习与性成”的思想说明了（）",
+    "type": 1,
+    "options": [
+      {
+        "content": "美育要注意因势利导",
+        "checked": 0
+      },
+      {
+        "content": "美育就是修身养性",
+        "checked": 0
+      },
+      {
+        "content": "美育是一个潜移默化的过程",
+        "checked": 1
+      },
+      {
+        "content": "美育是主体的率性而为",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "审美活动是（）",
+    "type": 2,
+    "options": [
+      {
+        "content": "一种由外力所决定、所强制的活动",
+        "checked": 0
+      },
+      {
+        "content": "一种最符合人性尊严的活动",
+        "checked": 1
+      },
+      {
+        "content": "一种理性的活动",
+        "checked": 0
+      },
+      {
+        "content": "一种摆脱了肉体必然性对人支配的活动",
+        "checked": 1
+      },
+      {
+        "content": "一种只属于人的活动",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "广义的审美形态包括（）",
+    "type": 2,
+    "options": [
+      {
+        "content": "自然美",
+        "checked": 1
+      },
+      {
+        "content": "艺术美",
+        "checked": 1
+      },
+      {
+        "content": "社会美",
+        "checked": 1
+      },
+      {
+        "content": "生活美",
+        "checked": 0
+      },
+      {
+        "content": "装饰美",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "把审美经验视为游戏活动的美学家有（）",
+    "type": 2,
+    "options": [
+      {
+        "content": "康德",
+        "checked": 1
+      },
+      {
+        "content": "席勒",
+        "checked": 1
+      },
+      {
+        "content": "斯宾塞",
+        "checked": 1
+      },
+      {
+        "content": "伽达默尔",
+        "checked": 1
+      },
+      {
+        "content": "尧斯",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "下列说法中体现了美育的主体性特征的有（）",
+    "type": 2,
+    "options": [
+      {
+        "content": "所谓乐者，人得其得也",
+        "checked": 1
+      },
+      {
+        "content": "夫美不自美，因人而彰",
+        "checked": 1
+      },
+      {
+        "content": "智者乐水，仁者乐山",
+        "checked": 1
+      },
+      {
+        "content": "有一千个读者，就有一千个哈姆雷特",
+        "checked": 1
+      },
+      {
+        "content": "随心所欲不逾矩",
+        "checked": 1
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "美育是一种（）",
+    "type": 2,
+    "options": [
+      {
+        "content": "形象直观的数育",
+        "checked": 1
+      },
+      {
+        "content": "潜移默化的教育",
+        "checked": 1
+      },
+      {
+        "content": "立竿见影的教育",
+        "checked": 0
+      },
+      {
+        "content": "以情动人的教育",
+        "checked": 1
+      },
+      {
+        "content": "以理服人的教育",
+        "checked": 0
+      }
+    ],
+    "analysis": ""
+  },
+  {
+    "name": "简述美学思想与审美意识的关系。",
+    "type": 3,
+    "analysis": "(1)美学思想奠基于审美意识,但有进一步的发展。(2分)\n(2)审美意识是一些不自觉的感性认识。(2分)\n(3)美学思想则是对于审美现象的本质、特征和规律比较自觉的理性认识。(2分)"
+  },
+  {
+    "name": "简述审美理想的特点。",
+    "type": 3,
+    "analysis": "(1)审美理想不是一种纯粹的理性观念,而是具有一定的形象性特点。(2分)\n(2)审美理想在主体的审美心理结构中必然处于最高位置。(2分)\n(3)审美理想一旦形成就具有很高的稳定性。(2分)"
+  },
+  {
+    "name": "简述审美活动的他律性。",
+    "type": 3,
+    "analysis": "(1)审美活动从根本上要受到物质实践的决定和制约。(2分)\n(2)物质生产劳动所达到的历史水准以及在生产中形成的人与人、人与自然之间相互关系的特点,会渗透到审美活动的具体内容中,并决定着审美的方向和水平。(2分)\n(3)各种审美形态的历史性生成和演变实质上都是人的现实境遇、生存状况以及理想追求在历史中不断发展的审美凝聚和反映。(2分)"
+  },
+  {
+    "name": "简述美感和审美经验的差别。",
+    "type": 3,
+    "analysis": "(1)美感是指主体对于对象的主观感受,审美经验则是指人在审美活动中与对象所形成的审美关系。(2分)\n(2)美感是指主体瞬间的感受和体验,审美经验则是指审美对象被构成并得到感受和评价的动态过程。(2分)\n(3)美感是指主体对于某种现成对象所做出的反应,因而美感理论实际上假定美或审美对象在审美活动开始之前就已经存在了。(2分)"
+  },
+  {
+    "name": "简述审美理解的基本特征。",
+    "type": 3,
+    "analysis": "(1)审美理解具有非概念性的特点。(3分)\n(2)审美理解具有多义性的特点,从而使审美对象的含义显得丰富多彩和不可穷尽(3分)"
+  },
+  {
+    "name": "简述美育和情感教育的关系。",
+    "type": 3,
+    "analysis": "(1)美育具有强烈的情感特征,它以感性形象唤起人们的情感共鸣。(3分)\n(2)美育不等于情感教育,情感只是美育的中介和手段。(3分)"
+  },
+  {
+    "name": "试论荒诞的基本特征。",
+    "type": 3,
+    "analysis": "(1)荒诞是一种对人生存在的无意义状态的体悟。\n(2)荒诞的审美意象具有象征性。\n(3)荒诞的表现形式具有怪诞性。"
+  },
+  {
+    "name": "举例说明艺术操作在艺术创作中的重要作用。",
+    "type": 3,
+    "analysis": "(1)艺术操作是意象生产中的一个重要环节\n(2)只有艺术操作才能赋予意象以最终的形式符号,从而完成意象的物态化和物化。\n(3)各门类艺术由于其形式符号和传达媒介的不同,因此就需要不同的艺术操作和艺术技巧。"
+  }
+]
