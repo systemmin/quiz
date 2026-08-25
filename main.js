@@ -31,10 +31,15 @@ function readDirectory(dir) {
 
 				const filePath = path.join(subjectPath, fileName);
 				const jsonPath = path.join(subjectPath, jsonName);
-
 				const result = analyzeTopic(filePath)
-				fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
-
+				
+				fs.stat(jsonPath, (err, stats) => {
+					if (err) {
+						fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
+					} else {
+						console.log('跳过：',fileName);
+					}
+				});
 				child.push({
 					name: fileName,
 					path: toUrlPath(filePath)
@@ -98,7 +103,6 @@ function choiceAnalysis(answer, options) {
 function analyzeTopic(filePath, content) {
 	// 1、加载数据
 	let data = filePath ? fs.readFileSync(filePath, 'utf8') : content;
-	data = data.replaceAll('\r','\n')
 	// 2、按行拆分，并删除注释 #
 	const lines = data.split('\n').filter(item => !item.trim().startsWith("#"));
 
