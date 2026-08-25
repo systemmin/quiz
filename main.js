@@ -104,7 +104,7 @@ function analyzeTopic(filePath, content) {
 	// 1、加载数据
 	let data = filePath ? fs.readFileSync(filePath, 'utf8') : content;
 	// 2、按行拆分，并删除注释 #
-	const lines = data.split('\n').filter(item => !item.trim().startsWith("#"));
+	const lines = data.split(/\r?\n|\r/).filter(item => !item.trim().startsWith("#"));
 
 	// 3、题目拆分，按空行分组，结果转二维数组
 	const groupedArray = lines.reduce((result, value) => {
