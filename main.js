@@ -33,13 +33,14 @@ function readDirectory(dir) {
 				const jsonPath = path.join(subjectPath, jsonName);
 				const result = analyzeTopic(filePath)
 				
-				fs.stat(jsonPath, (err, stats) => {
-					if (err) {
-						fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
-					} else {
-						console.log('跳过：',fileName);
-					}
-				});
+				fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
+				// fs.stat(jsonPath, (err, stats) => {
+				// 	if (err) {
+				// 		fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
+				// 	} else {
+				// 		console.log('跳过：',fileName);
+				// 	}
+				// });
 				child.push({
 					name: fileName,
 					path: toUrlPath(filePath)
