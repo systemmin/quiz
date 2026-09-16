@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自考题库 - 在线答题</title>
+<style>
+	* { margin: 0; padding: 0; box-sizing: border-box; }
+	body {
+		font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+		background: #f0f2f5;
+		color: #333;
+		line-height: 1.6;
+	}
+	.container { max-width: 860px; margin: 0 auto; padding: 16px; }
+
+	/* 顶部栏 */
+	.header {
+		background: #fff;
+		border-radius: 8px;
+		padding: 16px 20px;
+		margin-bottom: 16px;
+		box-shadow: 0 1px 4px rgba(0,0,0,.08);
+	}
+	.header h1 { font-size: 20px; margin-bottom: 12px; }
+	.selectors { display: flex; gap: 10px; flex-wrap: wrap; }
+	.selectors select {
+		padding: 8px 10px;
+		border: 1px solid #d9d9d9;
+		border-radius: 6px;
+		font-size: 14px;
+		max-width: 100%;
+	}
+	.stats { margin-top: 10px; font-size: 14px; color: #666; }
+	.stats b.ok { color: #52c41a; }
+	.stats b.err { color: #f5222d; }
+
+	/* 题目卡片 */
+	.q-card {
+		background: #fff;
+		border-radius: 8px;
+		padding: 16px 20px;
+		margin-bottom: 14px;
+		box-shadow: 0 1px 4px rgba(0,0,0,.08);
+	}
+	.q-head { display: flex; gap: 8px; align-items: baseline; margin-bottom: 10px; }
+	.q-num {
+		flex-shrink: 0;
+		font-weight: bold;
+		color: #1890ff;
+	}
+	.q-type {
+		flex-shrink: 0;
+		font-size: 12px;
+		padding: 1px 8px;
+		border-radius: 10px;
+		background: #e6f7ff;
+		color: #1890ff;
+	}
+	.q-type.t3 { background: #f6ffed; color: #52c41a; }
+	.q-name { font-size: 15px; white-space: pre-wrap; }
+
+	/* 选项 */
+	.opt {
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
+		padding: 8px 12px;
+		margin-top: 8px;
+		border: 1px solid #e8e8e8;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: all .15s;
+		user-select: none;
+	}
+	.opt:hover { border-color: #1890ff; background: #f0f7ff; }
+	.opt .letter {
+		flex-shrink: 0;
+		width: 22px; height: 22px;
+		border-radius: 50%;
+		border: 1px solid #d9d9d9;
+		display: flex; align-items: center; justify-content: center;
+		font-size: 13px;
+	}
+	.opt.selected { border-color: #1890ff; background: #e6f7ff; }
+	.opt.selected .letter { background: #1890ff; border-color: #1890ff; color: #fff; }
+	.opt.correct { border-color: #52c41a; background: #f6ffed; }
+	.opt.correct .letter { background: #52c41a; border-color: #52c41a; color: #fff; }
+	.opt.wrong { border-color: #f5222d; background: #fff1f0; }
+	.opt.wrong .letter { background: #f5222d; border-color: #f5222d; color: #fff; }
+	.opt.disabled { cursor: default; }
+	.opt.disabled:hover { border-color: #e8e8e8; background: inherit; }
+	.opt.disabled.correct:hover { border-color: #52c41a; background: #f6ffed; }
+	.opt.disabled.wrong:hover { border-color: #f5222d; background: #fff1f0; }
+	.opt-text { white-space: pre-wrap; font-size: 14px; }
+
+	/* 结果反馈 */
+	.result { margin-top: 10px; font-size: 14px; font-weight: bold; display: none; }
+	.result.ok { color: #52c41a; display: block; }
+	.result.err { color: #f5222d; display: block; }
+	.analysis {
+		margin-top: 8px;
+		padding: 10px 12px;
+		background: #fafafa;
+		border-left: 3px solid #1890ff;
+		border-radius: 0 6px 6px 0;
+		font-size: 14px;
+		color: #555;
+		white-space: pre-wrap;
+		display: none;
+	}
+	.analysis.show { display: block; }
+	.analysis .ans-label { color: #1890ff; font-weight: bold; }
+
+	/* 按钮 */
+	.btn {
+		margin-top: 10px;
+		padding: 6px 20px;
+		border: none;
+		border-radius: 6px;
+		background: #1890ff;
+		color: #fff;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	.btn:hover { background: #40a9ff; }
+	.btn:disabled { background: #d9d9d9; cursor: default; }
+
+	.empty, .loading { text-align: center; color: #999; padding: 40px 0; }
+
+	.hint {
+		background: #fffbe6;
+		border: 1px solid #ffe58f;
+		border-radius: 8px;
+		padding: 12px 16px;
+		margin-bottom: 16px;
+		font-size: 14px;
+		color: #ad6800;
+		display: none;
+		white-space: pre-wrap;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<h1>📚 自考题库 · 在线答题</h1>
+		<div class="selectors">
+			<select id="subjectSel"><option value="">加载中…</option></select>
+			<select id="paperSel" disabled><option value="">请选择科目</option></select>
+		</div>
+		<div class="stats" id="stats" style="display:none"></div>
+	</div>
+
+	<div class="hint" id="hint"></div>
+	<div id="list"></div>
+	<div class="loading" id="loading">请选择试卷开始答题</div>
+</div>
+
+<script>
+const TYPE_NAME = { 1: '单选题', 2: '多选题', 3: '问答题' };
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+const subjectSel = document.getElementById('subjectSel');
+const paperSel = document.getElementById('paperSel');
+const listEl = document.getElementById('list');
+const statsEl = document.getElementById('stats');
+const loadingEl = document.getElementById('loading');
+const hintEl = document.getElementById('hint');
+
+let questions = [];
+// 每题状态: null=未答, true=答对, false=答错
+let results = [];
+
+/* ---------- 启动 ---------- */
+(async function init() {
+	try {
+		const res = await fetch('./indexes.json');
+		if (!res.ok) throw new Error(res.status);
+		const subjects = await res.json();
+		subjectSel.innerHTML = '<option value="">请选择科目</option>';
+		subjects.forEach((s, i) => {
+			const opt = document.createElement('option');
+			opt.value = i;
+			opt.textContent = s.name;
+			subjectSel.appendChild(opt);
+		});
+		subjectSel.dataset.subjects = JSON.stringify(subjects);
+	} catch (e) {
+		subjectSel.innerHTML = '<option value="">加载失败</option>';
+		showHint('数据加载失败。浏览器不允许 file:// 页面读取本地文件，请在本目录启动一个静态服务后再打开页面，例如：\n\n  npx serve .\n  或  python -m http.server 8000\n\n然后访问 http://localhost:8000/quiz.html');
+	}
+})();
+
+function showHint(text) {
+	hintEl.textContent = text;
+	hintEl.style.display = 'block';
+}
+
+/* ---------- 科目 / 试卷选择 ---------- */
+subjectSel.addEventListener('change', () => {
+	const subjects = JSON.parse(subjectSel.dataset.subjects || '[]');
+	const idx = subjectSel.value;
+	if (idx === '') {
+		paperSel.disabled = true;
+		paperSel.innerHTML = '<option value="">请选择科目</option>';
+		return;
+	}
+	const subject = subjects[idx];
+	// 只取 json 试卷，新的在前
+	const papers = subject.list.filter(f => f.name.endsWith('.json')).sort().reverse();
+	paperSel.innerHTML = '<option value="">请选择试卷</option>';
+	papers.forEach((p, i) => {
+		const opt = document.createElement('option');
+		opt.value = i;
+		opt.textContent = p.name;
+		paperSel.appendChild(opt);
+	});
+	paperSel.dataset.papers = JSON.stringify(papers);
+	paperSel.disabled = false;
+});
+
+paperSel.addEventListener('change', async () => {
+	const papers = JSON.parse(paperSel.dataset.papers || '[]');
+	const idx = paperSel.value;
+	if (idx === '') return;
+	loadingEl.style.display = 'block';
+	loadingEl.textContent = '加载试卷中…';
+	listEl.innerHTML = '';
+	try {
+		const res = await fetch('./' + papers[idx].path);
+		questions = await res.json();
+		results = questions.map(() => null);
+		renderAll();
+	} catch (e) {
+		loadingEl.textContent = '试卷加载失败';
+	}
+});
+
+/* ---------- 渲染 ---------- */
+function renderAll() {
+	loadingEl.style.display = 'none';
+	listEl.innerHTML = '';
+	questions.forEach((q, i) => {
+		listEl.appendChild(renderQuestion(q, i));
+	});
+	updateStats();
+}
+
+function renderQuestion(q, idx) {
+	const card = document.createElement('div');
+	card.className = 'q-card';
+
+	const head = document.createElement('div');
+	head.className = 'q-head';
+	head.innerHTML = `<span class="q-num">${idx + 1}.</span>
+		<span class="q-type ${q.type === 3 ? 't3' : ''}">${TYPE_NAME[q.type] || q.type}</span>
+		<span class="q-name">${escapeHtml((q.name || '').trim())}</span>`;
+	card.appendChild(head);
+
+	if (q.type === 3) {
+		// 非选择题：直接展示答案
+		const ans = document.createElement('div');
+		ans.className = 'analysis show';
+		ans.innerHTML = `<span class="ans-label">【答案】</span>${escapeHtml((q.analysis || '（无答案）').trim())}`;
+		card.appendChild(ans);
+		results[idx] = null; // 不计入对错统计
+		return card;
+	}
+
+	// 选择题
+	const optBox = document.createElement('div');
+	const optionEls = q.options.map((opt, oi) => {
+		const el = document.createElement('div');
+		el.className = 'opt';
+		el.innerHTML = `<span class="letter">${LETTERS[oi]}</span><span class="opt-text">${escapeHtml((opt.content || '').trim())}</span>`;
+		optBox.appendChild(el);
+		return el;
+	});
+	card.appendChild(optBox);
+
+	// 反馈区
+	const result = document.createElement('div');
+	result.className = 'result';
+	card.appendChild(result);
+	const analysis = document.createElement('div');
+	analysis.className = 'analysis';
+	card.appendChild(analysis);
+
+	if (q.analysis && q.analysis.trim()) {
+		analysis.innerHTML = `<span class="ans-label">【解析】</span>${escapeHtml(q.analysis.trim())}`;
+	}
+
+	if (q.type === 1) {
+		// 单选：点击即判定
+		optionEls.forEach((el, oi) => {
+			el.addEventListener('click', () => judge(idx, [oi], optionEls, result, analysis, card));
+		});
+	} else {
+		// 多选：点击切换选中，点确认判定
+		optionEls.forEach(el => {
+			el.addEventListener('click', () => {
+				if (el.classList.contains('disabled')) return;
+				el.classList.toggle('selected');
+			});
+		});
+		const btn = document.createElement('button');
+		btn.className = 'btn';
+		btn.textContent = '确认答案';
+		btn.addEventListener('click', () => {
+			const picked = [];
+			optionEls.forEach((el, oi) => { if (el.classList.contains('selected')) picked.push(oi); });
+			if (!picked.length) return;
+			judge(idx, picked, optionEls, result, analysis, card);
+			btn.disabled = true;
+		});
+		card.appendChild(btn);
+	}
+	return card;
+}
+
+/* ---------- 判定 ---------- */
+function judge(idx, picked, optionEls, result, analysis, card) {
+	if (results[idx] !== null) return; // 已答过，不重复判定
+	const q = questions[idx];
+	const correctIdx = q.options.map((o, i) => o.checked === 1 ? i : -1).filter(i => i >= 0);
+
+	const pickedSet = new Set(picked);
+	const correctSet = new Set(correctIdx);
+	const isOk = picked.length === correctIdx.length && picked.every(i => correctSet.has(i));
+
+	optionEls.forEach((el, oi) => {
+		el.classList.add('disabled');
+		el.classList.remove('selected');
+		if (correctSet.has(oi)) el.classList.add('correct');
+		else if (pickedSet.has(oi)) el.classList.add('wrong');
+	});
+
+	result.textContent = isOk ? '✓ 回答正确' : `✗ 回答错误，正确答案：${correctIdx.map(i => LETTERS[i]).join('')}`;
+	result.classList.add(isOk ? 'ok' : 'err');
+	if (analysis.innerHTML.trim()) analysis.classList.add('show');
+
+	const btn = card.querySelector('.btn');
+	if (btn) btn.disabled = true;
+
+	results[idx] = isOk;
+	updateStats();
+}
+
+function updateStats() {
+	const answered = results.filter(r => r !== null);
+	if (!answered.length) { statsEl.style.display = 'none'; return; }
+	const ok = answered.filter(r => r === true).length;
+	statsEl.style.display = 'block';
+	statsEl.innerHTML = `本题卷共 ${questions.length} 题，已答 ${answered.length} 题 —— 答对 <b class="ok">${ok}</b> 题，答错 <b class="err">${answered.length - ok}</b> 题`;
+}
+
+function escapeHtml(s) {
+	return String(s).replace(/[&<>"']/g, c => ({
+		'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+	}[c]));
+}
+</script>
+</body>
+</html>
