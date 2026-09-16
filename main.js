@@ -1,4 +1,6 @@
-const { log } = require('console');
+const {
+	log
+} = require('console');
 const fs = require('fs');
 const path = require('path');
 
@@ -33,13 +35,13 @@ function readDirectory(dir) {
 				const filePath = path.join(subjectPath, fileName);
 				const jsonPath = path.join(subjectPath, jsonName);
 				const result = analyzeTopic(filePath)
-				
+
 				// fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
 				fs.stat(jsonPath, (err, stats) => {
 					if (err) {
 						fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
 					} else {
-						console.log('跳过：',fileName);
+						console.log('跳过：', fileName);
 					}
 				});
 				child.push({
@@ -140,10 +142,14 @@ function analyzeTopic(filePath, content) {
 		if (findIndex != -1) {
 			analysis = groups.splice(findIndex).join('\n').replace('-', '');
 			let t = analysis.split('/ ')
-			if(t.length>1){
+			if (t.length > 1) {
 				analysis = t[0]
 				shorthand = t[1]
 			}
+		} else {
+			findIndex = groups.findIndex(item => item.startsWith('/ '));
+			if (findIndex != -1)
+				shorthand = groups.splice(findIndex).join('\n').replace('/ ', '');
 		}
 		// 题目对象
 		const topic = {};
