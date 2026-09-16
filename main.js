@@ -1,3 +1,4 @@
+const { log } = require('console');
 const fs = require('fs');
 const path = require('path');
 
@@ -33,14 +34,14 @@ function readDirectory(dir) {
 				const jsonPath = path.join(subjectPath, jsonName);
 				const result = analyzeTopic(filePath)
 				
-				fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
-				// fs.stat(jsonPath, (err, stats) => {
-				// 	if (err) {
-				// 		fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
-				// 	} else {
-				// 		console.log('跳过：',fileName);
-				// 	}
-				// });
+				// fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
+				fs.stat(jsonPath, (err, stats) => {
+					if (err) {
+						fs.writeFileSync(jsonPath, JSON.stringify(result, null, 2));
+					} else {
+						console.log('跳过：',fileName);
+					}
+				});
 				child.push({
 					name: fileName,
 					path: toUrlPath(filePath)
@@ -97,6 +98,8 @@ function choiceAnalysis(answer, options) {
 
 /**
  * 文本分析，解析结构化数据，参数 2 选 1
+ * “-” 题目分析标识
+ * “/ ” 题目速记标识
  * @param {String} filePath 文件路径
  * @param {String} content 文本内容
  * @returns {Array} [{name:'',type:'',analysis:'',options:[]}]
@@ -130,10 +133,17 @@ function analyzeTopic(filePath, content) {
 		// 类型：正确答案
 		let matchs = topicTypeCheck(title);
 		// 解析：-开头内容
+		// console.log('groups: ',groups);
 		let analysis = '';
+		let shorthand = '';
 		let findIndex = groups.findIndex(item => item.startsWith('-'));
 		if (findIndex != -1) {
 			analysis = groups.splice(findIndex).join('\n').replace('-', '');
+			let t = analysis.split('/ ')
+			if(t.length>1){
+				analysis = t[0]
+				shorthand = t[1]
+			}
 		}
 		// 题目对象
 		const topic = {};
@@ -154,6 +164,7 @@ function analyzeTopic(filePath, content) {
 			analysis = groups.join('\n');
 		}
 		topic.analysis = analysis;
+		topic.shorthand = shorthand;
 		listData.push(topic);
 	}
 	return listData;
