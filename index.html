@@ -112,6 +112,21 @@
 	.analysis.show { display: block; }
 	.analysis .ans-label { color: #1890ff; font-weight: bold; }
 
+	/* 速记 */
+	.shorthand {
+		margin-top: 8px;
+		padding: 10px 12px;
+		background: #fffbe6;
+		border-left: 3px solid #faad14;
+		border-radius: 0 6px 6px 0;
+		font-size: 14px;
+		color: #555;
+		white-space: pre-wrap;
+		display: none;
+	}
+	.shorthand.show { display: block; }
+	.shorthand .sh-label { color: #d48806; font-weight: bold; }
+
 	/* 按钮 */
 	.btn {
 		margin-top: 10px;
@@ -264,6 +279,12 @@ function renderQuestion(q, idx) {
 		ans.className = 'analysis show';
 		ans.innerHTML = `<span class="ans-label">【答案】</span>${escapeHtml((q.analysis || '（无答案）').trim())}`;
 		card.appendChild(ans);
+		if (q.shorthand && q.shorthand.trim()) {
+			const shorthand = document.createElement('div');
+			shorthand.className = 'shorthand show';
+			shorthand.innerHTML = `<span class="sh-label">【速记】</span>${escapeHtml(q.shorthand.trim())}`;
+			card.appendChild(shorthand);
+		}
 		results[idx] = null; // 不计入对错统计
 		return card;
 	}
@@ -286,9 +307,15 @@ function renderQuestion(q, idx) {
 	const analysis = document.createElement('div');
 	analysis.className = 'analysis';
 	card.appendChild(analysis);
+	const shorthand = document.createElement('div');
+	shorthand.className = 'shorthand';
+	card.appendChild(shorthand);
 
 	if (q.analysis && q.analysis.trim()) {
 		analysis.innerHTML = `<span class="ans-label">【解析】</span>${escapeHtml(q.analysis.trim())}`;
+	}
+	if (q.shorthand && q.shorthand.trim()) {
+		shorthand.innerHTML = `<span class="sh-label">【速记】</span>${escapeHtml(q.shorthand.trim())}`;
 	}
 
 	if (q.type === 1) {
@@ -339,6 +366,8 @@ function judge(idx, picked, optionEls, result, analysis, card) {
 	result.textContent = isOk ? '✓ 回答正确' : `✗ 回答错误，正确答案：${correctIdx.map(i => LETTERS[i]).join('')}`;
 	result.classList.add(isOk ? 'ok' : 'err');
 	if (analysis.innerHTML.trim()) analysis.classList.add('show');
+	const shorthandEl = card.querySelector('.shorthand');
+	if (shorthandEl && shorthandEl.innerHTML.trim()) shorthandEl.classList.add('show');
 
 	const btn = card.querySelector('.btn');
 	if (btn) btn.disabled = true;
